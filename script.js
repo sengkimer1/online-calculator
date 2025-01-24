@@ -17,18 +17,19 @@ function calculate() {
     }
 }
 function sin() {
-    display.value = Math.sin(display.value).toFixed(2);
+    let radians = parseFloat(display.value) * (Math.PI / 180);
+    display.value = Math.sin(radians).toFixed(2);
 }
 function cos() {
-    display.value = Math.cos(display.value).toFixed(2);
-}
+    let radians = parseFloat(display.value) * (Math.PI / 180);
+    display.value = Math.cos(radians).toFixed(2);}
 
 function percent() {
     display.value = display.value / 100;
 }
-function arithmeticsign() {
-    display.value = -1 * display.value;
-}
+// function arithmeticsign() {
+//     display.value = -1 * display.value;
+// }
 function square() {
     display.value = Math.pow(display.value, 2);
 }
