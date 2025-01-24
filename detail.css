@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial;
+
+}
+
+#container{
+    background-color: rgba(204, 141, 233, 0.486);
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+#calculator {
+
+    width: 50%;
+    height: 800px;
+    font-family: Arial, sans-serif;
+    border-radius: 40px;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 4px 4px 4px rgb(201, 196, 196);
+    padding: 20px;
+    box-shadow: 4px 4px 4px rgb(243, 164, 239);
+
+}
+
+#display {
+    width: 90%;
+    border-radius: 20px;
+    background-color: #fdfdfd;
+    color: black;    padding: 10px;
+    text-align: right;
+    margin-top: 50px;
+    margin-left: 35px;
+    height: 60px;
+        border: solid 1px rgb(15, 15, 15);
+    font-size: 1.5rem;
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    padding: 30px;
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 90%;
+}
+
+button {
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+    background-color: #f6f3f39f;
+    border: none;
+    color: rgb(5, 5, 5);
+    margin-top: 5px;
+    font-size: 1.5rem;
+    font-weight: 500px;
+    cursor: pointer;
+}
+button.bg{
+    background-color: rgba(245, 156, 223, 0.822);
+}
+
+button:hover{
+    background-color: rgba(163, 163, 163, 0.39);
+}
+button.bg:hover{
+    background-color: rgba(250, 125, 219, 0.822);
+}
+
+@media(max-width:450px) {
+    body {
+        height: 80vh;
+    }
+    #calculator {
+        margin: 0;
+        width: 90%;
+        height: 450px;
+        padding: 10px;
+    }
+
+    #display {
+        width: 90%;
+        padding: 10px;
+        margin: 0;
+        margin-left: 15px;
+        margin-top: 25px;
+        font-size: 15px;
+
+    }
+
+    #keys {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        margin: 0;
+        margin-left: 15px;
+        padding: 10px;
+        width: 90%;
+    }
+
+    button {
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        margin-top: 5px;
+        font-size: 15px;
+
+    }
+
+}

@@ -20,11 +20,11 @@ function sin() {
     display.value = Math.sin(display.value).toFixed(2);
 }
 function cos() {
-    display.value = Math.cos(display.value) .toFixed(2);
-    }
-    function tan() {
-        display.value = Math.tan(display.value).toFixed(2);
-        }
+    display.value = Math.cos(display.value).toFixed(2);
+}
+function tan() {
+    display.value = Math.tan(display.value).toFixed(2);
+}
 function percent() {
     display.value = display.value / 100;
 }
@@ -37,18 +37,32 @@ function square() {
 function cube() {
     display.value = Math.pow(display.value, 3);
 }
-// function power(){
-//     display.value = Math.pow(display.value,display.value);
-// }
+
+let conversionPerformed = false; 
+
 function currencyUs() {
-    display.value = display.value /4050;
+    if (!conversionPerformed) { 
+        display.value = display.value / 4000;
+        conversionPerformed = true; 
+    } else {
+        alert("Conversion can only be performed once."); 
+    }
 }
+
+let conversion = false; 
+
 function currencyKh() {
-    display.value = display.value * 4100;
+    if (!conversion) { 
+        display.value = display.value  * 4100;
+        conversion = true; 
+    } else {
+        alert("Conversion can only be performed once."); 
+    }
 }
-function squareRoot(){
+
+function squareRoot() {
     display.value = Math.sqrt(display.value);
 }
-function cubeRoot(){
+function cubeRoot() {
     display.value = Math.cbrt(display.value);
 }

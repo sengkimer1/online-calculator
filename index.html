@@ -11,9 +11,9 @@
 <body>
     <div id="container">
         <div id="calculator">
-            <input id="display">
+            <input id="display" readonly>
             <div id="keys">
-                <button onclick="clearDisplay()">C</button>
+                <button onclick="clearDisplay()">AC</button>
                 <button onclick="deleteDisplay()">DEl</button>
                 <button onclick="appendToDisplay('%')">%</button>
                 <button class="bg" onclick="arithmeticsign()">/</button>
@@ -32,10 +32,13 @@
                 <button onclick="appendToDisplay('.')">.</button>
                 <button onclick="appendToDisplay('0')">0</button>
                 <button class="bg" onclick="calculate()">=</button>
-                <button class="bg" onclick="calculate()">all</button>
+                <button  class="bg"> <a href="detail.html"
+                    style="text-decoration: none; color: black;">All</a></button>
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
+
