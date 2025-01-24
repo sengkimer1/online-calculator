@@ -22,9 +22,7 @@ function sin() {
 function cos() {
     display.value = Math.cos(display.value).toFixed(2);
 }
-function tan() {
-    display.value = Math.tan(display.value).toFixed(2);
-}
+
 function percent() {
     display.value = display.value / 100;
 }
