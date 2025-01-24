@@ -70,3 +70,44 @@ button:hover{
 button.bg:hover{
     background-color: rgba(250, 125, 219, 0.822);
 }
+
+@media(max-width:450px) {
+    body {
+        height: 80vh;
+    }
+    #calculator {
+        margin: 0;
+        width: 90%;
+        height: 450px;
+        padding: 10px;
+    }
+
+    #display {
+        width: 90%;
+        padding: 5px;
+        margin: 0;
+        margin-left: 15px;
+        margin-top: 25px;
+        font-size: 10px;
+
+    }
+
+    #keys {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 0;
+        margin-left: 20px;
+        padding: 10px;
+        width: 90%;
+    }
+
+    button {
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        margin-top: 5px;
+        font-size: 15px;
+
+    }
+
+}
