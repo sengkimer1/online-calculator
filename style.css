@@ -3,11 +3,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 102vh;
+    height: 100vh;
 }
 #container{
-    background-color: rgba(26, 26, 26, 0.74);
-    width: 50%;
+    background-color: rgba(204, 141, 233, 0.486);
+    width: 100%;
     height: 100%;
     justify-content: center;
     align-items: center;
@@ -15,29 +15,29 @@ body{
 }
 #calculator{
     width: 70%;
-    height: 66%;
-    font-family: Arial, sans-serif;
+    height: 75%;
+    font-family: Arial;
     background-color: rgb(255, 255, 255);
-    border-radius: 15px;
+    border-radius: 40px;
     max-width: 500px;
     overflow: hidden;
-    box-shadow: 4px 4px 4px rgb(201, 196, 196);
+    box-shadow: 4px 4px 4px rgb(243, 164, 239);
 }
 #display{
-    width: 80%;
-    height: 50px;
-    border-radius: 20px;
-    background-color: #f0eff3;
+    width: 70%;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #fdfdfd;
     color: black;
     border: none;
-    padding: 10px;
+    padding: 30px;
     font-size: 24px;
     text-align: right;
     height: 100hv;
-    margin-top: 65px;
-    margin-left: 35px;
+    margin-top: 50px;
+    margin-left: 50px;
     justify-content: center;
-    border: solid 1px rgb(170, 169, 169);
+    border: solid 2px rgba(170, 169, 169, 0.185);
     font-size: 2rem;
 }
 #keys{
@@ -52,10 +52,20 @@ button{
     width: 80px;
     height: 80px;
     border-radius: 50px;
-    background-color: #3836369f;
     border: none;
-    color: white;
+    background-color: rgb(243, 243, 243);
+    color: black;
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 300;
     cursor: pointer;
+}
+button.bg{
+    background-color: rgba(245, 156, 223, 0.822);
+}
 
+button:hover{
+    background-color: rgba(163, 163, 163, 0.39);
+}
+button.bg:hover{
+    background-color: rgba(250, 125, 219, 0.822);
+}
